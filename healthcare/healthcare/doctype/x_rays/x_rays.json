@@ -1,0 +1,56 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 02:59:56.846714",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "x_rays",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "X-rays",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fieldname": "x_rays",
+   "fieldtype": "Select",
+   "label": "\u0627\u0644\u0627\u0634\u0639\u0629",
+   "options": "\u0631\u0646\u064a\u0646\n\u0631\u0646\u064a\u0646 \u0645\u063a\u0646\u0627\u0637\u064a\u0633\u064a\n\u0627\u0634\u0639\u0629 \u0639\u0627\u064a\u062f\u064a"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-21 20:15:12.712160",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "X-rays",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

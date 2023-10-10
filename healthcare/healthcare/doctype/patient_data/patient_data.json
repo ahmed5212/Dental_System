@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-09-21 02:43:42.417631",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "first_name",
+  "mobile",
+  "sex",
+  "\u0627\u0644\u062a\u062d\u0627\u0644\u064a\u0644_tab",
+  "\u0627\u0644\u062a\u062d\u0644\u064a\u0644",
+  "deat",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fetch_from": "first_name.mobile",
+   "fieldname": "mobile",
+   "fieldtype": "Link",
+   "label": "Mobile",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fetch_from": "first_name.sex",
+   "fieldname": "sex",
+   "fieldtype": "Link",
+   "label": "Gender",
+   "options": "Patient",
+   "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Patient data",
+   "print_hide": 1,
+   "read_only": 1
+  },
+  {
+   "fetch_from": "mobile.first_name",
+   "fetch_if_empty": 1,
+   "fieldname": "first_name",
+   "fieldtype": "Link",
+   "label": "First Name",
+   "options": "Patient"
+  },
+  {
+   "fieldname": "\u0627\u0644\u062a\u062d\u0627\u0644\u064a\u0644_tab",
+   "fieldtype": "Tab Break",
+   "label": "\u0627\u0644\u062a\u062d\u0627\u0644\u064a\u0644"
+  },
+  {
+   "fieldname": "\u0627\u0644\u062a\u062d\u0644\u064a\u0644",
+   "fieldtype": "Link",
+   "label": "\u0646\u0648\u0639 \u0627\u0644\u062a\u062d\u0644\u064a\u0644",
+   "options": "Laboratory"
+  },
+  {
+   "fieldname": "deat",
+   "fieldtype": "Link",
+   "label": "\u0627\u0644\u062a\u0627\u0631\u064a\u062e",
+   "options": "Laboratory",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-09-22 20:59:47.095390",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Patient data",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

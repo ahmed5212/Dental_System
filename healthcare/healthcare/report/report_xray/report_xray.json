@@ -1,0 +1,39 @@
+{
+ "add_total_row": 0,
+ "columns": [],
+ "creation": "2023-09-25 00:52:49.542874",
+ "disable_prepared_report": 0,
+ "disabled": 0,
+ "docstatus": 0,
+ "doctype": "Report",
+ "filters": [],
+ "idx": 0,
+ "is_standard": "Yes",
+ "modified": "2023-09-27 20:50:56.470921",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Report Xray",
+ "owner": "Administrator",
+ "prepared_report": 0,
+ "ref_doctype": "Xray",
+ "reference_report": "",
+ "report_name": "Report Xray",
+ "report_type": "Script Report",
+ "roles": [
+  {
+   "role": "Laboratory User"
+  },
+  {
+   "role": "Nursing User"
+  },
+  {
+   "role": "LabTest Approver"
+  },
+  {
+   "role": "Healthcare Administrator"
+  },
+  {
+   "role": "System Manager"
+  }
+ ]
+}
